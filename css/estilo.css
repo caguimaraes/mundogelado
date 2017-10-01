@@ -1,0 +1,362 @@
+/* PRINCIPAIS */
+*{
+    box-sizing: content-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* NAV BAR */
+
+.nav-menu{
+    background-color: #2A2D34;
+    position: fixed;
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* ICONES */
+
+.container-icones{
+    display: flex;
+    align-items: center;    
+}
+
+.container-icones img{
+     width: 20px;
+     padding: 0 30px 0 0;    
+}
+
+/* MENU */
+
+nav ul{
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 35px;
+    list-style: none;
+}
+
+
+nav ul li a{
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 0 20px 0 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;    
+}
+
+
+/* HEADER */
+
+header{
+    padding: 200px 0 150px 0px;  
+    background-image: url(../img/bgprincipal.jpg);
+    background-size: cover;
+    background-attachment: fixed;    
+}
+
+.container-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header p{
+    color: white;
+    white-space: pre;
+    font-family: 'Cinzel', serif;
+    font-size: 50px;
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.6);
+    
+}
+
+.container-header img{
+    width: 400px;
+}
+
+/* DESTINOS */
+
+.destinos{
+    background-color: #A0DDE6;
+    padding: 50px;
+}
+
+.div-destinos{
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.div-destinos img{
+    width: 350px;
+    /* border-radius: 50%; */
+}
+
+/* EFEITO FOTOS */
+
+.demo-2{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    float: left;
+    margin-right: 20px;
+    background-color: rgba(48, 197, 255, 0.5);
+    z-index: 
+}
+
+.demo-2 p,.demo-2 h2{
+    color: #fff;
+    padding-top: 5px;
+    position: relative;
+    text-align: center;
+}
+
+.demo-2 p{
+    font-family: 'Oswald';
+    font-size: 19px;
+    line-height: 18px;
+    margin: 0;
+}
+
+.demo-2 h2{
+    text-transform: uppercase;
+    font-size: 24px;
+    margin: 0;
+    font-family:'Cinzel';
+}
+
+.effect img{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    cursor: pointer;
+    margin: 0;
+    -webkit-transition: bottom .5s ease-in-out;
+    -moz-transition: bottom .5s ease-in-out;
+    -o-transition: bottom .5s ease-in-out;
+    transition: bottom .5s ease-in-out;
+}
+
+.effect img.top:hover{
+    bottom: -96px;
+    padding-top: 100px;
+}
+
+
+/* FORMULARIO */
+
+.formulario{
+    background-color: #80C2AF;
+    padding: 50px;
+}
+
+.div-formulario{
+    margin: 0 auto;
+    width: 50%;
+    background-color: #5C946E;
+    padding: 25px;
+    text-align: center;
+}
+
+.div-formulario p{
+    color: white;
+}
+
+.vamosviajar{
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+
+.div-formulario input[type="text"]{
+    width: 90%;
+    height: 30px;
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+
+.div-formulario input[type="email"]{
+    width: 90%;
+    height: 30px;
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+    padding-left: 10px;
+    margin-left: 10px;
+
+}
+
+.div-formulario input[type="submit"]{
+    background-color: #A0DDE6;
+    border: 0;
+    width: 150px;
+    padding: 10px 25px;
+    color: #2A2D34;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    align-items: center;
+}
+
+.destino[class="destino"]{
+    border: 0;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+    width: 150px;
+    
+}
+
+
+/* FOOTER */
+
+footer{
+    background-color: #2A2D34;
+    padding: 20px;
+}
+
+footer p{
+    color: white;
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover{
+    color: #2A2D34;
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        width: 100%;
+    }
+
+    .nav-menu{
+        background-color: #2A2D34;
+        position: fixed;
+        width: 100%;
+    }
+    
+    /* .container{
+        display: flex;
+    } */
+         
+    .container-icones img{
+         display: none;   
+    }
+
+    header{
+        padding: 200px 0 150px 0px;  
+        background-image: url(../img/bgprincipal.jpg);
+        background-size: fixed;
+        background-attachment: fixed;    
+    }
+    
+    .container-header{
+        align-items: center;
+    }
+    
+    header p{
+        color: white;
+        white-space: pre;
+        font-family: 'Cinzel', serif;
+        font-size: 15px;
+        text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.6);
+        
+    }
+    
+    .container-header img{
+        width: 200px;
+        align-content: center;
+    }
+
+    .div-destinos{
+        margin: 0 auto;
+        width: 80%;
+        display: block;
+        flex-direction: column;
+    }
+    
+    .div-destinos img{
+        width: 200px;
+    }
+
+    /* EFEITO FOTOS */
+
+.demo-2{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    float: left;
+    margin-right: 20px;
+    background-color: rgba(48, 197, 255, 0.5);
+}
+
+.demo-2 p,.demo-2 h2{
+    color: #fff;
+    padding-top: 5px;
+    position: relative;
+    text-align: center;
+}
+
+.demo-2 p{
+    font-family: 'Oswald';
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0;
+}
+
+.demo-2 h2{
+    text-transform: uppercase;
+    font-size: 15px;
+    margin: 0;
+    font-family:'Cinzel';
+}
+
+.effect img{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    cursor: pointer;
+    margin: 0;
+    -webkit-transition: bottom .3s ease-in-out;
+    -moz-transition: bottom .3s ease-in-out;
+    -o-transition: bottom .3s ease-in-out;
+    transition: bottom .3s ease-in-out;
+}
+
+.effect img.top:hover{
+    bottom: -96px;
+    padding-top: 100px;
+}
+
+
+
+    .div-formulario{
+        margin: 0 auto;
+        width: 80%;
+        background-color: #5C946E;
+        padding: 25px;
+        text-align: center;
+    }
+
+
